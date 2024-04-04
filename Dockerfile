@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # Define el comando para ejecutar la aplicación
-CMD [ "node", "Transbot.js" ]
+CMD [ "npm", "start" ]

@@ -1,6 +1,4 @@
-## @Transbot_bot_bot Telegram Bot
-
-Sigue los siguientes pasos:
+## Pasos para la instalación
 
 1. Instalar dependencias:
 
@@ -13,6 +11,10 @@ Sigue los siguientes pasos:
    ```bash
    npm start
 
+3. En caso de ejecutar con Docker:
+
+   ```bash
+   docker-compose up
 
 # @Transbot_bot_bot Telegram Bot
 
@@ -30,5 +32,5 @@ Sigue los siguientes pasos:
 - Configuro el bot para responder al comando `/start` e indicar que está en línea.
 
 
-## Notas adicionales
-    El programa requiere de un respectivo .env con la key establecida por la API de Telegram y un archivo .json con la información de la key suministrada por la API de Google TranslateV2.
+# Notas adicionales
+El programa requiere de un respectivo .env con la key establecida por la API de Telegram y un archivo .json con la información de la key suministrada por la API de Google TranslateV2.
