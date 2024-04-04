@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  telbot:
+    image: dockertransbot:latest
+    environment:
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS}
