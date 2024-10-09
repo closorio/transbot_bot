@@ -21,7 +21,7 @@ export async function sendMedia(chatId, media, caption, targetLanguage) {
 export function setupStartCommand() {
     bot.onText(/\/start/, (msg) => {
         const chatId = msg.chat.id;
-        const message = '*Online*';
+        const message = '¿Qué pashó? ¡¡im online bby!!';
         bot.sendMessage(chatId, message);
     });
 }
