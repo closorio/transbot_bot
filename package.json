@@ -1,12 +1,12 @@
 {
-  "name": "transbot",
-  "version": "1.0.0",
+  "name": "transbot-1.1",
+  "version": "1.1.0",
   "type": "module",
   "description": "",
-  "main": "Transbot.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Transbot.js"
+    "start": "node index.js"
 
   },
   "author": "",
