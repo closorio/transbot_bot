@@ -2,7 +2,12 @@ import TelegramBot from 'node-telegram-bot-api';
 import { TELEGRAM_BOT_TOKEN } from '../config/config.js';
 import { translateText } from './translationService.js';
 
-const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
+let bot;
+
+function initializeBot() {
+    bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
+    setupStartCommand();
+}
 
 export async function sendTextMessage(chatId, text, targetLanguage) {
     const translatedText = await translateText(text, targetLanguage);
@@ -26,6 +31,9 @@ export function setupStartCommand() {
     });
 }
 
-export default bot;
+export function stopBot() {
+    bot.stopPolling();
+    console.log('El bot se ha detenido satisfactoriamente');
+}
 
-
+export { bot, initializeBot };

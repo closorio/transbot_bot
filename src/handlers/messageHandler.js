@@ -1,4 +1,4 @@
-import bot, { sendTextMessage, sendMedia } from '../services/telegramService.js';
+import { bot, sendTextMessage, sendMedia } from '../services/telegramService.js';
 
 export async function forwardChannelPosts(publicChannelId, privateChannelIds, targetLanguage) {
     bot.on('channel_post', async (msg) => {
